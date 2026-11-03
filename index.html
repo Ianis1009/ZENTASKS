@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DailyTasks</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="aurora"></div>
+<div class="noise"></div>
+
+<div class="app">
+
+  <header class="header">
+    
+
+    <div class="counter" id="doneCounter">
+✔ 0
+</div>
+
+    <div>
+      <h1 class="title">ZENTASKS</h1>
+      <p>planificarea task-urilor tale se realizează aici!</p>
+    </div>
+  </header>
+
+  <div class="bar">
+    <input id="text" placeholder="scrie task-ul...">
+    <input id="duration" type="number" placeholder="min">
+    <button id="calendarBtn">📅</button>
+    <button id="add">+</button>
+  </div>
+
+  <div class="filters">
+    <button class="active" data-f="all">toate</button>
+    <button data-f="active">active</button>
+    <button data-f="done">finalizate</button>
+  </div>
+
+  <div id="list"></div>
+
+</div>
+
+<input type="datetime-local" id="deadline" hidden>
+
+<div id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>
